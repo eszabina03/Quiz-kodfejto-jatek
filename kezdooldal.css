@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu h1 {
+    margin-top: 8%; 
+}
+
+.menu a {
+    margin-top: auto;
+    margin-bottom: 140px;
+    margin: auto 0px 150px 35px;
+}
+
+.gomb {
+    height: 100px;
+    width: 100px;
+}
+
+
+.question {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.question-mark {
+    font-size: 24px;
+    color: white;
+}
+
+.circle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: rgba(183, 37, 196, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+    color: white;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.close:hover {
+    color: red;
+}
+
+.popup.show {
+    display: block;
+}
